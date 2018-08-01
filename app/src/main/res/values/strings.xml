@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">The Book Store</string>
+
+    <!-- Label for overflow menu option that inserts fake product data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all product data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Products</string>
+
+    <!-- Title for the activity to add a new product [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_product">Add a Product</string>
+
+    <!-- Label for editor overflow menu option that deletes the current product [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Label for editor menu option to save product and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor menu option to save product and leave editor [CHAR LIMIT=20] -->
+    <string name="action_add">Add</string>
+
+    <!-- Label for editor menu option to save product and leave editor [CHAR LIMIT=20] -->
+    <string name="action_minus">Minus</string>
+
+    <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_enter">Please Enter Product Details</string>
+
+    <!-- Label for product category information in the editor [CHAR LIMIT=30] -->
+    <string name="category_type">Product Type</string>
+
+    <!--Universal symbol for plus -->
+    <string name = "plus" translatable="false"> + </string>
+    <!--Universal symbol for minus -->
+    <string name = "minus" translatable="false"> - </string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_name">Enter a Product Name</string>
+
+    <!-- Text hint for price field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_price">Enter a Price</string>
+
+    <!-- Text hint for quantity field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_quantity">Enter the Quantity</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_supplier_name">Enter the Supplier Name</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_supplier_phone">Enter Supplier Telephone Number</string>
+
+    <!-- Label for dropdown menu option if the product is books[CHAR LIMIT=20] -->
+    <string name="books">Books</string>
+    <!-- Label for dropdown menu option if the product is toys and games [CHAR LIMIT=20] -->
+    <string name="toys_and_games">Toys and Games</string>
+    <!-- Label for dropdown menu option if the product is art and crafts [CHAR LIMIT=20] -->
+    <string name="art_and_crafts">Art and Crafts</string>
+    <!-- label for empty view text -->
+    <string name="empty_view_title_text">It\'s a bit empty here...</string>
+    <!-- Subtitle text for the empty view that prompts the user to add a product [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a product</string>
+    <!-- Subtitle text for the empty view that prompts the user to add a product [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text_two">Click the cross to continue.</string>
+    <!-- Subtitle text for the empty view that prompts the user to add a product [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text_three">Add Product Name, Price, Quantity,</string>
+    <!-- Subtitle text for the empty view that prompts the user to add a product [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text_four">Supplier\'s Name and Telephone Number</string>
+    <!-- Subtitle text for the empty view that prompts the user to add a product [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text_five">on the next screen.</string>
+    <!-- Toast message in editor when new product has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_product_failed">Error with saving product</string>
+    <!-- Toast message in editor when new product has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_product_successful">Product saved</string>
+    <!-- editor activity edit string -->
+    <string name="editor_activity_title_edit_a_product">Edit a Product</string>
+    <!-- editor activity add string -->
+    <string name="editor_activity_title_add_a_product">Add a Product</string>
+    <!-- Toast message in editor when new product has been successfully updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_product_successful">Product Updated</string>
+    <!-- Toast message in editor when new product has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_update_product_failed">Error with updating product</string>
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+    <!-- Dialog button text for the option to keep editing the current product [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+    <!-- Toast message in editor when current product was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_product_successful">Product deleted</string>
+    <!-- Toast message in editor when current product has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_product_failed">Error with deleting product</string>
+    <!-- Dialog message to ask the user to confirm deleting the current product [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this product?</string>
+    <!-- Dialog button text for the option to confirm deleting the current product [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+    <!-- Dialog button text for the option to cancel deletion of the current product [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+    <!-- toast for all entries deleted -->
+    <string name="all_entries_deleted"> All Entries Deleted</string>
+    <!-- toast prompt to enter a product name -->
+    <string name="add_product_name">Please add a product name to continue</string>
+    <!-- toast prompt to enter a product name -->
+    <string name="add_product_price">Please add a product price to continue</string>
+    <!-- toast prompt to enter a product name -->
+    <string name="add_product_quantity">Please add a product quantity to continue</string>
+    <!-- toast prompt to enter a product name -->
+    <string name="add_supplier_name">Please add a supplier name to continue</string>
+    <!-- toast prompt to enter a product name -->
+    <string name="add_supplier_phone_number">Please add a Supplier Telephone Number</string>
+    <!-- toast prompt to add more product details -->
+    <string name="add_all_product_details">Add more product details</string>
+    <!-- toast message for quantity when there are no products left -->
+    <string name="zero_quantity_reached">You cannot have less than zero products</string>
+    <!-- toast message for quantity when decrement button pressed -->
+    <string name="decrement_button_pressed">Decrement button pressed</string>
+    <!-- toast message for quantity when increment button pressed -->
+    <string name="increment_button_pressed">Increment button pressed</string>
+</resources>

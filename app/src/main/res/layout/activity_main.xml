@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatalogueActivity">
+
+    <ListView
+        android:id="@+id/list_view_books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_margin" />
+
+    <!-- Empty view for the list -->
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/empty_image"
+            android:layout_width="@dimen/empty_activity_image"
+            android:layout_height="@dimen/empty_activity_image"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_image_margin"
+            android:src="@drawable/pencils"/>
+
+        <TextView
+            android:id="@+id/empty_title_text"
+            style="@style/EmptyMainActivityPrimaryStyle"
+            android:layout_below="@+id/empty_image"
+            android:text="@string/empty_view_title_text" />
+
+        <TextView
+            android:id="@+id/empty_subtitle_text"
+            style="@style/EmptyMainActivitySecondaryStyle"
+            android:layout_below="@+id/empty_title_text"
+            android:text="@string/empty_view_subtitle_text"
+            />
+        <TextView
+            android:id="@+id/empty_subtitle_text_two"
+            style="@style/EmptyMainActivitySecondaryStyle"
+            android:layout_below="@+id/empty_subtitle_text"
+            android:text="@string/empty_view_subtitle_text_two" />
+        <TextView
+            android:id="@+id/empty_subtitle_text_three"
+            style="@style/EmptyMainActivitySecondaryStyle"
+            android:layout_below="@+id/empty_subtitle_text_two"
+            android:text="@string/empty_view_subtitle_text_three"
+            />
+        <TextView
+            android:id="@+id/empty_subtitle_text_four"
+            style="@style/EmptyMainActivitySecondaryStyle"
+            android:layout_below="@+id/empty_subtitle_text_three"
+            android:text="@string/empty_view_subtitle_text_four" />
+        <TextView
+            android:id="@+id/empty_subtitle_text_five"
+            style="@style/EmptyMainActivitySecondaryStyle"
+            android:layout_below="@+id/empty_subtitle_text_four"
+            android:text="@string/empty_view_subtitle_text_five"
+            />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add_circle_outline"
+        android:layout_margin="@dimen/activity_margin"
+        />
+</RelativeLayout>

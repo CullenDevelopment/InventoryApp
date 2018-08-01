@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for the editor -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_enter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_type" />
+
+        <!-- Input field -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <!-- Product drop-down spinner -->
+            <Spinner
+                android:id="@+id/spinner_product_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spinner_height"
+                android:paddingRight="@dimen/default_padding"
+                android:paddingEnd="@dimen/default_padding"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/default_padding">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_product_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_product_name"
+                android:inputType="textCapWords" />
+
+            <!-- Price field -->
+            <EditText
+                android:id="@+id/edit_product_price"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_product_price"
+                android:inputType="numberDecimal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Quantity field -->
+                <EditText
+                    android:id="@+id/edit_quantity"
+                    style="@style/EditorFieldStyle"
+                    android:layout_weight="2"
+                    android:hint="@string/hint_quantity"
+                    android:inputType="number" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/increment"
+                        android:layout_width="@dimen/button_dimensions"
+                        android:layout_height="@dimen/button_dimensions"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:text="@string/plus" />
+
+                    <Button
+                        android:id="@+id/decrement"
+                        android:layout_width="@dimen/button_dimensions"
+                        android:layout_height="@dimen/button_dimensions"
+                        android:layout_marginEnd="@dimen/activity_margin"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:text="@string/minus" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Supplier Name field -->
+            <EditText
+                android:id="@+id/edit_supplier_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_supplier_name"
+                android:inputType="textCapWords" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Supplier Phone field -->
+                <EditText
+                    android:id="@+id/edit_supplier_phone"
+                    style="@style/EditorFieldStyle"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_supplier_phone"
+                    android:layout_margin="@dimen/activity_margin"
+                    android:inputType="phone" />
+
+                <ImageButton
+                    android:id="@+id/supplier_phone"
+                    android:layout_width="@dimen/button_dimensions"
+                    android:layout_height="@dimen/button_dimensions"
+                    android:layout_weight="0"
+                    android:layout_margin="@dimen/activity_margin"
+                    android:src="@drawable/ic_call" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

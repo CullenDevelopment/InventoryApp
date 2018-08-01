@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margin around the floating action button in CatalogActivity -->
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Common margin value used throughout the app -->
+    <dimen name="activity_margin">16dp</dimen>
+    <!-- Common padding value used throughout the app -->
+    <dimen name="default_padding">16dp</dimen>
+    <!-- layout height for spinner -->
+    <dimen name="spinner_height">48dp</dimen>
+    <!-- activity mail xml empty page picture size -->
+    <dimen name="empty_activity_image">160dp</dimen>
+    <!-- Image height list_view -->
+    <dimen name="Image_height_list_view">50dp</dimen>
+    <!-- Image width list_view -->
+    <dimen name="Image_width_list_view">75dp</dimen>
+    <!-- Increment, decrement and phone button dimensions square -->
+    <dimen name="button_dimensions">48dp</dimen>
+    <!-- empty activity image upper paddiing -->
+    <dimen name="activity_image_margin">72dp</dimen>
+</resources>
